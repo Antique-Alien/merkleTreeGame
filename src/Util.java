@@ -1,6 +1,11 @@
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 public class Util {
+
+
+
+    public static void sleepRandomTime(){}
+    public static void sleep (int timeToSleep){}
     public synchronized String generateHash(String sOriginal){
         try {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
@@ -16,4 +21,5 @@ public class Util {
             return null;
         }
     }
+
 }
